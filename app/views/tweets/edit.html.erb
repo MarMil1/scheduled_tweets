@@ -2,3 +2,4 @@
 
 <%= render "form", tweet: @tweet %>
 
+<%= link_to "Delete",  tweet_path(@tweet), data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' }, class: "btn btn-outline-danger mt-3" %>
